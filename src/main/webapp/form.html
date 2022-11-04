@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+
+  <style>
+    div#top{
+      text-align: center;
+    }
+
+    div#main{
+      padding-left: 50px;
+    }
+  </style>
+</head>
+<body>
+<div id="container">
+  <div id="top">
+    <h1>Form / Heera Kim</h1>
+    <h2>22100241</h2>
+  </div>
+  <div id="wrapper">
+    <form action="form_ok.jsp" name="person" method="post">
+      <fieldset style="width: auto; margin: 5px">
+        <legend>사용자 정보 입력</legend>
+
+        <div id="main">
+          <h3>이름</h3>
+          <label for="firstname">Firstname: </label><br>
+          <input type="text" id="firstname" name="uname1" placeholder="your firstname"><br>
+
+          <label for="lastname">Lastname: </label><br>
+          <input type="text" id="lastname" name="uname2" placeholder="your lastname">
+
+          <h3>성별</h3>
+          <label for="gender1"></label>
+          <input type="radio" id="gender1" name="gender" value="M">남
+          <input type="radio" id="radio" name="gender" value="W">여<br>
+
+          <h3>생년월일</h3>
+          <input type="date" name="birth" min="1950-01-01" max="2005-12-31">
+
+          <h3>학교</h3>
+          <label for="school"><span>*</span>학교 이름: </label>
+          <input type="text" id="school" name="schname" required>
+
+          <h3>취미</h3>
+          자유롭게 적으세요.: <br>
+          <textarea name="hobby" cols="40" rows="5"></textarea>
+
+
+          <h3>좋아하는 음식</h3>
+          <input type="checkbox" id="food1" name="food" value="한식">한식
+          <input type="checkbox" id="food2" name="food" value="양식">양식
+          <input type="checkbox" id="food3" name="food" value="일식">일식
+          <input type="checkbox" id="food4" name="food" value="중식">중식
+
+
+          <h3>좋아하는 언어</h3>
+          <input type="checkbox" id="lan" name="lan[]" value="한국어">한국어
+          <input type="checkbox" id="lan1" name="lan[]" value="영어">영어
+          <input type="checkbox" id="lan2" name="lan[]" value="일본어">일본어
+          <input type="checkbox" id="lan3" name="lan[]" value="중국어">중국어
+          <input type="checkbox" id="lan4" name="lan[]" value="etc">etc
+
+          <h3>학부</h3>
+          <select name="major">
+            <option value="경영경제학부">경영경제학부</option>
+            <option value="공간환경시스템학부">공간환경시스템학부</option>
+            <option value="국제어문학부">국제어문학부</option>
+            <option value="글로벌리더십학부">글로벌리더십학부</option>
+            <option value="기계제어공학부">기계제어공학부</option>
+            <option value="법학부">법학부</option>
+            <option value="상담심리사회복지학부">상담심리사회복지학부</option>
+            <option value="생명과학부">생명과학부</option>
+            <option value="전산전자공학부" selected>전산전자공학부</option>
+            <option value="커뮤니케이션학부">커뮤니케이션학부</option>
+            <option value="콘텐츠융합디자인학부">콘텐츠융합디자인학부</option>
+            <option value="ICT창업학부">ICT창업학부</option>
+          </select>
+
+          <h3>학기 수</h3>
+          <select name="grade">
+            <option value="1학기">1학기</option>
+            <option value="2학기">2학기</option>
+            <option value="3학기">3학기</option>
+            <option value="4학기">4학기</option>
+            <option value="5학기">5학기</option>
+            <option value="6학기">6학기</option>
+            <option value="7학기">7학기</option>
+            <option value="8학기 이상">8학기 이상</option>
+          </select>
+
+
+          <h3>오늘의 일기</h3>
+          <textarea name="content" cols="30" rows="5"></textarea>
+        </div>
+      </fieldset>
+      <input type="submit" value="저장" style="size: auto">
+    </form>
+
+
+
+  </div>
+</div>
+
+</body>
+</html>
